@@ -1,5 +1,6 @@
 Librairies utiles au projet :
-npm i cors body-parser express mssql nodemon
+cors body-parser express mssql nodemon
+(npm install pour les installer depuis package)
 
 !!! LES CHEMINS POUR IMPORTER DES LIBRAIRIES OU ACCEDER A DES FICHIERS SONT SOUS FORME ABSOLUES CAR IMPOSSIBILITE DE BUILD
 L'EXECUTABLE AVEC LES CHEMINS RELATIFS (BUILD avec la version 14 de node sous la version 25)
