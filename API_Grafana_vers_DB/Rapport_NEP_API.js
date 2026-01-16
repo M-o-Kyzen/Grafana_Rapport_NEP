@@ -1,15 +1,15 @@
-const express = require("C:/Users/keskinmt/Documents/Grafana_dev/API_Grafana_vers_DB/node_modules/express");
+const express = require("./node_modules/express");
 //Création d'une application pour permettre de créer notre environnement SQL (serveur pour envoyer une requête, lein avec la base...)
 const app = express();
 const port = 3333;
 
-const cors = require("C:/Users/keskinmt/Documents/Grafana_dev/API_Grafana_vers_DB/node_modules/cors");
+const cors = require("./node_modules/cors");
 //Mise en forme du payload
-const bodyParser = require("C:/Users/keskinmt/Documents/Grafana_dev/API_Grafana_vers_DB/node_modules/body-parser");
+const bodyParser = require("./node_modules/body-parser");
 //Récupération de la config
-const { connect } = require("C:/Users/keskinmt/Documents/Grafana_dev/API_Grafana_vers_DB/db.js");
+const { connect } = require("./db.js");
 //On définie l'accès au fichier où on définie notre réponse http
-const queryRoutes = require("C:/Users/keskinmt/Documents/Grafana_dev/API_Grafana_vers_DB/routes/query.js");
+const queryRoutes = require("./routes/query.js");
 
 //Les domaines/méthodes/headers autorisés à communiquer avec le serveur
 app.use(cors(
