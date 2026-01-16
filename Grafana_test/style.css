@@ -1,0 +1,83 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111217;
+}
+
+.box{
+color:#838282;
+position: absolute;
+text-align: center;
+border: solid #838282 2px;
+border-radius: 10px;
+padding: 6px 5px;
+bottom:40px;
+font-weight: bold;
+}
+
+.TopBox{
+position: absolute;
+bottom:100px;
+
+}
+
+#B1{
+left:0px;
+}
+
+#B2{
+left:170px;
+}
+
+#B3{
+
+left:340px;
+
+}
+
+#B4{
+
+left:510px;
+
+}
+
+#B5{
+left:0px;
+}
+
+#B6{
+left:170px;
+}
+
+#B7{
+
+left:340px;
+
+}
+
+#B8{
+
+left:510px;
+
+}
+
+input{
+position: relative;
+bottom: -1px;
+border:none;
+color:#ffffff;
+font-weight:bold;
+background-color: #838282;
+}
+
+button{
+
+  position: absolute;
+  left: 302px;
+  bottom:0px;
+  font-weight:bold;
+  color: #838282;
+  background-color: #111217;
+  border: solid #838282;
+}
+
+

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "http-server": "^14.1.1",
+    "mssql": "^11.0.1",
+    "node-http": "^0.0.5",
+    "node.js": "^0.0.1-security",
+    "nodemon": "^3.1.10"
+  },
+  "name": "api_grafana_vers_db",
+  "version": "1.0.0",
+  "main": "nodemon Rapport_NEP_API.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Rapport_NEP_API.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {}
+}

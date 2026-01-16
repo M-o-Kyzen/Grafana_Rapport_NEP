@@ -1,0 +1,23 @@
+Librairies utiles au projet :
+npm i cors body-parser express mssql nodemon
+
+!!! LES CHEMINS POUR IMPORTER DES LIBRAIRIES OU ACCEDER A DES FICHIERS SONT SOUS FORME ABSOLUES CAR IMPOSSIBILITE DE BUILD
+L'EXECUTABLE AVEC LES CHEMINS RELATIFS (BUILD avec la version 14 de node sous la version 25)
+
+Dimensions si besoin d'incorporer la page html pour les Test bandelettes :
+<iframe width="670" height="175" src="http://192.168.1.67:8080/Test_Bandelette.html"></iframe>
+
+Voir quel process est actif sur un port spécifique ainsi que le numéro de PID :
+netstat -aon | findstr :<Numéro de port>
+
+Afficher les règles firewall d'un port sur le pc actuel :
+netsh advfirewall firewall show rule name=all | findstr <Numéro de port>
+
+Ajouter/Retirer un règle firewall sur un port du pc actuel (qui autorise la com TCP sur ce port, côté PC) :
+netsh advfirewall firewall add rule name="Port 3333" dir=in action=allow protocol=TCP localport=<Numéro de port>
+netsh advfirewall firewall remove  rule name="<Nom de la règle>"
+
+Pour generer un executable avec pkg, utiliser la dernière version de node est ok mais il est important d'utiliser node16 dans la commande.
+
+Service Rapport de NEP (prod) : Rapport_NEP_API
+Service Rapport de NEP (test) : Grafana_Test
