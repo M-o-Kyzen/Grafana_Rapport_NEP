@@ -8,17 +8,17 @@ L'EXECUTABLE AVEC LES CHEMINS RELATIFS (BUILD avec la version 14 de node sous la
 Dimensions si besoin d'incorporer la page html pour les Test bandelettes :
 <iframe width="670" height="175" src="http://192.168.1.67:8080/Test_Bandelette.html"></iframe>
 
-Voir quel process est actif sur un port spécifique ainsi que le numéro de PID :
-netstat -aon | findstr :<Numéro de port>
+Voir quel process est actif sur un port spÃ©cifique ainsi que le numÃ©ro de PID :
+netstat -aon | findstr :<NumÃ©ro de port>
 
-Afficher les règles firewall d'un port sur le pc actuel :
-netsh advfirewall firewall show rule name=all | findstr <Numéro de port>
+Afficher les rÃ©gles firewall d'un port sur le pc actuel :
+netsh advfirewall firewall show rule name=all | findstr <NumÃ©ro de port>
 
-Ajouter/Retirer un règle firewall sur un port du pc actuel (qui autorise la com TCP sur ce port, côté PC) :
-netsh advfirewall firewall add rule name="Port 3333" dir=in action=allow protocol=TCP localport=<Numéro de port>
-netsh advfirewall firewall remove  rule name="<Nom de la règle>"
+Ajouter/Retirer un rÃ©gle firewall sur un port du pc actuel (qui autorise la com TCP sur ce port, cÃ´tÃ© PC) :
+netsh advfirewall firewall add rule name="Port 3333" dir=in action=allow protocol=TCP localport=<NumÃ©ro de port>
+netsh advfirewall firewall remove  rule name="<Nom de la rÃ©gle>"
 
-Pour generer un executable avec pkg, utiliser la dernière version de node est ok mais il est important d'utiliser node16 dans la commande.
+Pour generer un executable avec pkg, utiliser la derniÃ¨re version de node est ok mais il est important d'utiliser node16 dans la commande.
 
 Service Rapport de NEP (prod) : Rapport_NEP_API
 Service Rapport de NEP (test) : Grafana_Test
